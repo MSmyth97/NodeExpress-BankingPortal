@@ -20,7 +20,7 @@ app.use(express.urlencoded({extended: true}));
 app.get('/', (req, res) => res.render('index', {title:'Account Summary', accounts:accounts}));
 
 app.use('/services', servicesRoutes);
-app.use('/accounts', accountRoutes);
+app.use('/account', accountRoutes);
 
 
 
